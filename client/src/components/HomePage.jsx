@@ -1,11 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Hero from "./Hero.jsx";
+// import ChatWindow from "./ChatWidget/ChatWindow.jsx"
+import ChatPopup from "./ChatWidget/ChatPopup.jsx";
 const HomePage = ({darkMode}) => {
   return (
     <div>
       {/* Hero Section */}
       <Hero />
+      {/* Chat Widget */}
+      <ChatPopup />
       {/* How It Works */}
       <section className="py-20 bg-white dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
