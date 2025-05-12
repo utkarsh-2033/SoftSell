@@ -1,5 +1,7 @@
 import axios from 'axios'
 
 export function askSoftSell(question) {
-  return axios.post('/api/chat', { question }).then(r => r.data.answer)
+  
+  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+  return axios.post(`${BACKEND_URL}/api/chat`, { question }).then(r => r.data.answer)
 }
